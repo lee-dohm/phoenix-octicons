@@ -11,7 +11,7 @@ Makes GitHub's Octicons available to a [Phoenix framework](http://www.phoenixfra
 In your Phoenix application, inside your `web/web.ex` file in the quoted section of the `view/0` function, insert:
 
 ```elixir
-import PhoenixOcticons.Helpers
+import PhoenixOcticons
 ```
 
 Then you can use the `octicon` and `mega_octicon` helper functions in your templates.
