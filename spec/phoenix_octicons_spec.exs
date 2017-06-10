@@ -1,10 +1,8 @@
-defmodule PhoenixOcticons.Helpers.Spec do
+defmodule PhoenixOcticons.Spec do
   use ESpec
 
-  alias PhoenixOcticons.Helpers
-
   describe "octicon" do
-    let :beaker, do: Helpers.octicon(:beaker)
+    let :beaker, do: PhoenixOcticons.octicon(:beaker)
 
     it "renders safe text" do
       {safe?, _} = beaker()
@@ -20,7 +18,7 @@ defmodule PhoenixOcticons.Helpers.Spec do
   end
 
   describe "mega_octicon" do
-    let :mega_beaker, do: Helpers.mega_octicon(:beaker)
+    let :mega_beaker, do: PhoenixOcticons.mega_octicon(:beaker)
 
     it "renders safe text" do
       {safe?, _} = mega_beaker()
