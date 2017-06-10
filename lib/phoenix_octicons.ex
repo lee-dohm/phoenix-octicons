@@ -1,6 +1,6 @@
 defmodule PhoenixOcticons do
   @moduledoc """
-  Provides helper functions for including [GitHub Octicons][https://octicons.github.com]
+  Provides helper functions for including [GitHub Octicons](https://octicons.github.com)
   in your Phoenix templates.
 
   ## Examples
