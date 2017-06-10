@@ -7,10 +7,18 @@ defmodule PhoenixOcticons.Mixfile do
     [
       app: :phoenix_octicons,
       version: @version,
+      deps: deps(),
+
+      name: "Phoenix Octicons",
+      description: "Makes GitHub's Octicons available to a Phoenix framework application",
+      source_url: "https://github.com/lee-dohm/phoenix-octicons",
+      homepage_url: "https://github.com/lee-dohm/phoenix-octicons",
+      docs: docs(),
+      package: package(),
+
       elixir: "~> 1.4",
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
-      deps: deps(),
       preferred_cli_env: [espec: :test]
     ]
   end
@@ -26,6 +34,21 @@ defmodule PhoenixOcticons.Mixfile do
       {:cmark, "~> 0.7.0", only: :dev},
       {:ex_doc, "~> 0.16.1", only: :dev, runtime: false},
       {:espec, "~> 1.4.0", only: :test}
+    ]
+  end
+
+  defp docs do
+    [
+      main: "readme",
+      extras: ["README.md", "LICENSE.md"]
+    ]
+  end
+
+  defp package do
+    [
+      licenses: ["MIT"],
+      maintainers: ["Lee Dohm"],
+      links: %{"GitHub" => "https://github.com/lee-dohm/phoenix-octicons"}
     ]
   end
 end
