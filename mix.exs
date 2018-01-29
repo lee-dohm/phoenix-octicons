@@ -18,8 +18,7 @@ defmodule PhoenixOcticons.Mixfile do
 
       elixir: "~> 1.4",
       build_embedded: Mix.env == :prod,
-      start_permanent: Mix.env == :prod,
-      preferred_cli_env: [espec: :test]
+      start_permanent: Mix.env == :prod
     ]
   end
 
@@ -29,11 +28,11 @@ defmodule PhoenixOcticons.Mixfile do
 
   defp deps do
     [
-      {:octicons, "~> 0.4.0"},
+      {:octicons, "~> 0.4"},
       {:phoenix_html, "~> 2.6"},
-      {:cmark, "~> 0.7.0", only: :dev},
-      {:ex_doc, "~> 0.16.1", only: :dev, runtime: false},
-      {:espec, "~> 1.4.0", only: :test}
+      {:cmark, "~> 0.7", only: :dev},
+      {:ex_doc, "~> 0.18", only: :dev, runtime: false},
+      {:version_tasks, "~> 0.10", only: :dev}
     ]
   end
 
