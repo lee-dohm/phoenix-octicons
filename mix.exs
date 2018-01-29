@@ -28,10 +28,11 @@ defmodule PhoenixOcticons.Mixfile do
 
   defp deps do
     [
-      {:octicons, "~> 0.4.0"},
+      {:octicons, "~> 0.4"},
       {:phoenix_html, "~> 2.6"},
-      {:cmark, "~> 0.7.0", only: :dev},
-      {:ex_doc, "~> 0.16.1", only: :dev, runtime: false}
+      {:cmark, "~> 0.7", only: :dev},
+      {:ex_doc, "~> 0.18", only: :dev, runtime: false},
+      {:version_tasks, "~> 0.10", only: :dev}
     ]
   end
 
