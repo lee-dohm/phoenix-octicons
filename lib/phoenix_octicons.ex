@@ -30,7 +30,7 @@ defmodule PhoenixOcticons do
 
   def octicon(atom, options) when is_atom(atom), do: octicon(Atom.to_string(atom), options)
 
-  def octicon(name, options), do: raw(Octicons.toSVG(name, options))
+  def octicon(name, options), do: raw(Octicons.to_svg(name, options))
 
   @doc """
   Inserts a mega-sized (32 pixels) octicon in the current location in the template.
